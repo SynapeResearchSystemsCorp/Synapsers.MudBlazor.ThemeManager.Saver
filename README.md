@@ -13,14 +13,12 @@
   <a href="https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver/graphs/contributors">
     <img src="https://img.shields.io/github/contributors/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver" alt="Contributors">
   </a>
-  <a href="https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver/discussions">
-    <img src="https://img.shields.io/github/discussions/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver" alt="Discussions">
-  </a>  <!-- <a href="https://www.nuget.org/packages/Synapsers.MudBlazor.ThemeManager.Saver/">
+  <a href="https://www.nuget.org/packages/Synapsers.MudBlazor.ThemeManager.Saver/">
     <img src="https://img.shields.io/nuget/v/Synapsers.MudBlazor.ThemeManager.Saver.svg" alt="NuGet version">
   </a>
   <a href="https://www.nuget.org/packages/Synapsers.MudBlazor.ThemeManager.Saver/">
     <img src="https://img.shields.io/nuget/dt/Synapsers.MudBlazor.ThemeManager.Saver.svg" alt="NuGet downloads">
-  </a> -->
+  </a>
 </p>
 
 > **Enhanced Fork**: This project is an enhanced fork of the original [MudBlazor ThemeManager](https://github.com/MudBlazor/ThemeManager) with additional theme saving and persistence capabilities.
