@@ -1,6 +1,6 @@
-# Contributing to MudBlazor ThemeManager Saver
+# Contributing to Synapsers MudBlazor ThemeManager Saver
 
-Thank you for your interest in contributing to MudBlazor ThemeManager Saver! We welcome contributions from the community and are grateful for any help you can provide.
+Thank you for your interest in contributing to Synapsers MudBlazor ThemeManager Saver! We welcome contributions from the community and are grateful for any help you can provide.
 
 ## Table of Contents
 

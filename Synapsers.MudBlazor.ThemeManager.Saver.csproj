@@ -18,17 +18,17 @@
   </PropertyGroup>
   <PropertyGroup>
     <IsPackable>true</IsPackable>
-    <Version>1.0.1</Version>
-    <PackageVersion>1.0.1</PackageVersion>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.2</Version>
+    <PackageVersion>1.0.2</PackageVersion>
+    <AssemblyVersion>1.0.2.0</AssemblyVersion>
+    <FileVersion>1.0.2.0</FileVersion>
     <Company>Synapser Research Systems</Company>
     <Authors>Diego Orofino and Contributors</Authors>
     <Copyright>Copyright 2025 Synapser</Copyright>
     <Description>Enhanced MudBlazor ThemeManager component with theme saving and persistence capabilities. Fork of the original MudBlazor ThemeManager with additional features for designing, testing, saving, and managing MudBlazor themes.</Description>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageProjectUrl>https://github.com/dorofino/Synapsers.MudBlazor.ThemeManager.Saver</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/dorofino/Synapsers.MudBlazor.ThemeManager.Saver</RepositoryUrl>
+    <PackageReadmeFile>PackageReadme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver</RepositoryUrl>
     <PackageTags>Blazor, MudBlazor, Material, Material Design, Components, Blazor Components, Blazor Library, Theme Manager, Theme Persistence, Synapser</PackageTags>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
