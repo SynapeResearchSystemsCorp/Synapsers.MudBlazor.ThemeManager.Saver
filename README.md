@@ -17,12 +17,12 @@
   <a href="https://github.com/dorofino/MudBlazor.ThemeManager.Saver/discussions">
     <img src="https://img.shields.io/github/discussions/dorofino/MudBlazor.ThemeManager.Saver" alt="Discussions">
   </a>
-  <a href="https://www.nuget.org/packages/MudBlazor.ThemeManager.Saver/">
+  <!-- <a href="https://www.nuget.org/packages/MudBlazor.ThemeManager.Saver/">
     <img src="https://img.shields.io/nuget/v/MudBlazor.ThemeManager.Saver.svg" alt="NuGet version">
   </a>
   <a href="https://www.nuget.org/packages/MudBlazor.ThemeManager.Saver/">
     <img src="https://img.shields.io/nuget/dt/MudBlazor.ThemeManager.Saver.svg" alt="NuGet downloads">
-  </a>
+  </a> -->
 </p>
 
 > **Enhanced Fork**: This project is an enhanced fork of the original [MudBlazor ThemeManager](https://github.com/MudBlazor/ThemeManager) with additional theme saving and persistence capabilities.
