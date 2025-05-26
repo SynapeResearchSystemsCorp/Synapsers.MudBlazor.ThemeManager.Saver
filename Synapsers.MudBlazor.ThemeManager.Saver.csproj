@@ -26,7 +26,7 @@
     <Authors>Diego Orofino and Contributors</Authors>
     <Copyright>Copyright 2025 Synapser</Copyright>
     <Description>Enhanced MudBlazor ThemeManager component with theme saving and persistence capabilities. Fork of the original MudBlazor ThemeManager with additional features for designing, testing, saving, and managing MudBlazor themes.</Description>
-    <PackageReadmeFile>PackageReadme.md</PackageReadmeFile>
+    <PackageReadmeFile>READMEPACK.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver</PackageProjectUrl>
     <RepositoryUrl>https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver</RepositoryUrl>
     <PackageTags>Blazor, MudBlazor, Material, Material Design, Components, Blazor Components, Blazor Library, Theme Manager, Theme Persistence, Synapser</PackageTags>
@@ -47,6 +47,13 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="READMEPACK.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
