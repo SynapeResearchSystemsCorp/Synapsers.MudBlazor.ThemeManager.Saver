@@ -1,5 +1,25 @@
 # Synapser MudBlazor ThemeManager Saver - Theme Saving Guide
 
+<p align="center">
+  <img src="Synapsers.MudBlazor.ThemeManager.Saver.webp" alt="Synapser MudBlazor Theme Manager Saver" style="max-width: 100%; height: auto;">
+</p>
+
+<p align="center">  <a href="https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver/stargazers">
+    <img src="https://img.shields.io/github/stars/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver" alt="GitHub Repo stars">
+  </a>
+  <a href="https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver/commits/main">
+    <img src="https://img.shields.io/github/last-commit/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver" alt="GitHub last commit">
+  </a>
+  <a href="https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver" alt="Contributors">
+  </a>
+  <a href="https://www.nuget.org/packages/Synapsers.MudBlazor.ThemeManager.Saver/">
+    <img src="https://img.shields.io/nuget/v/Synapsers.MudBlazor.ThemeManager.Saver.svg" alt="NuGet version">
+  </a>
+  <a href="https://www.nuget.org/packages/Synapsers.MudBlazor.ThemeManager.Saver/">
+    <img src="https://img.shields.io/nuget/dt/Synapsers.MudBlazor.ThemeManager.Saver.svg" alt="NuGet downloads">
+  </a>
+</p>
 
 > **Enhanced Fork**: This project is an enhanced fork of the original [MudBlazor ThemeManager](https://github.com/MudBlazor/ThemeManager) with additional theme saving and persistence capabilities.
 
