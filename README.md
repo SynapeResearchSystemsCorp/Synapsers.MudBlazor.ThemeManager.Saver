@@ -486,7 +486,3 @@ Here's an example of how the persisted theme data looks when saved as JSON:
 ## Contributing
 
 For more information on contributing to this project, see [CONTRIBUTING.md](../../CONTRIBUTING.md).
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](../../LICENSE) file for details.
