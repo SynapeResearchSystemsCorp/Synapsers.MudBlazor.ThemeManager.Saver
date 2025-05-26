@@ -1,4 +1,6 @@
-﻿namespace MudBlazor.ThemeManager.Saver;
+﻿using MudBlazor;
+
+namespace Synapsers.MudBlazor.ThemeManager.Saver;
 
 public class ThemeManagerTheme
 {

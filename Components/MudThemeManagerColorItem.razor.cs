@@ -1,7 +1,8 @@
 ﻿using Microsoft.AspNetCore.Components;
+using MudBlazor;
 using MudBlazor.Utilities;
 
-namespace MudBlazor.ThemeManager.Saver;
+namespace Synapsers.MudBlazor.ThemeManager.Saver;
 
 public partial class MudThemeManagerColorItem : ComponentBase
 {

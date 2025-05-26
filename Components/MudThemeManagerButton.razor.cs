@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 
-namespace MudBlazor.ThemeManager.Saver;
+namespace Synapsers.MudBlazor.ThemeManager.Saver;
 
 public partial class MudThemeManagerButton : ComponentBase
 {

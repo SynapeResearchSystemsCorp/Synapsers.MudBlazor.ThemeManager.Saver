@@ -1,6 +1,7 @@
 ﻿using System.Text.Json;
+using MudBlazor;
 
-namespace MudBlazor.ThemeManager.Saver.Extensions;
+namespace Synapsers.MudBlazor.ThemeManager.Saver.Extensions;
 
 internal static class Extension
 {

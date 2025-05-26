@@ -1,6 +1,7 @@
 ﻿using System.Text.Json.Serialization;
+using MudBlazor;
 
-namespace MudBlazor.ThemeManager.Saver.Extensions;
+namespace Synapsers.MudBlazor.ThemeManager.Saver.Extensions;
 
 [JsonSerializable(typeof(Palette))]
 [JsonSerializable(typeof(PaletteDark))]

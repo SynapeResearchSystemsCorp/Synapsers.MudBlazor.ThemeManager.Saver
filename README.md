@@ -1,27 +1,25 @@
 # MudBlazor ThemeManager Saver - Theme Saving Guide
 
 <p align="center">
-  <img src="MudBlazor.ThemeManager.Saver.webp" alt="MudBlazor Theme Manager Saver" style="max-width: 100%; height: auto;">
+  <img src="Synapsers.MudBlazor.ThemeManager.Saver.webp" alt="Synapser MudBlazor Theme Manager Saver" style="max-width: 100%; height: auto;">
 </p>
 
-<p align="center">
-  <a href="https://github.com/dorofino/MudBlazor.ThemeManager.Saver/stargazers">
-    <img src="https://img.shields.io/github/stars/dorofino/MudBlazor.ThemeManager.Saver" alt="GitHub Repo stars">
+<p align="center">  <a href="https://github.com/dorofino/Synapsers.MudBlazor.ThemeManager.Saver/stargazers">
+    <img src="https://img.shields.io/github/stars/dorofino/Synapsers.MudBlazor.ThemeManager.Saver" alt="GitHub Repo stars">
   </a>
-  <a href="https://github.com/dorofino/MudBlazor.ThemeManager.Saver/commits/main">
-    <img src="https://img.shields.io/github/last-commit/dorofino/MudBlazor.ThemeManager.Saver" alt="GitHub last commit">
+  <a href="https://github.com/dorofino/Synapsers.MudBlazor.ThemeManager.Saver/commits/main">
+    <img src="https://img.shields.io/github/last-commit/dorofino/Synapsers.MudBlazor.ThemeManager.Saver" alt="GitHub last commit">
   </a>
-  <a href="https://github.com/dorofino/MudBlazor.ThemeManager.Saver/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/dorofino/MudBlazor.ThemeManager.Saver" alt="Contributors">
+  <a href="https://github.com/dorofino/Synapsers.MudBlazor.ThemeManager.Saver/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/dorofino/Synapsers.MudBlazor.ThemeManager.Saver" alt="Contributors">
   </a>
-  <a href="https://github.com/dorofino/MudBlazor.ThemeManager.Saver/discussions">
-    <img src="https://img.shields.io/github/discussions/dorofino/MudBlazor.ThemeManager.Saver" alt="Discussions">
+  <a href="https://github.com/dorofino/Synapsers.MudBlazor.ThemeManager.Saver/discussions">
+    <img src="https://img.shields.io/github/discussions/dorofino/Synapsers.MudBlazor.ThemeManager.Saver" alt="Discussions">
+  </a>  <!-- <a href="https://www.nuget.org/packages/Synapsers.MudBlazor.ThemeManager.Saver/">
+    <img src="https://img.shields.io/nuget/v/Synapsers.MudBlazor.ThemeManager.Saver.svg" alt="NuGet version">
   </a>
-  <!-- <a href="https://www.nuget.org/packages/MudBlazor.ThemeManager.Saver/">
-    <img src="https://img.shields.io/nuget/v/MudBlazor.ThemeManager.Saver.svg" alt="NuGet version">
-  </a>
-  <a href="https://www.nuget.org/packages/MudBlazor.ThemeManager.Saver/">
-    <img src="https://img.shields.io/nuget/dt/MudBlazor.ThemeManager.Saver.svg" alt="NuGet downloads">
+  <a href="https://www.nuget.org/packages/Synapsers.MudBlazor.ThemeManager.Saver/">
+    <img src="https://img.shields.io/nuget/dt/Synapsers.MudBlazor.ThemeManager.Saver.svg" alt="NuGet downloads">
   </a> -->
 </p>
 
@@ -135,7 +133,7 @@ For applications that need to persist themes as JSON files in the wwwroot folder
 
 ```csharp
 using Microsoft.AspNetCore.Hosting;
-using MudBlazor.ThemeManager.Saver;
+using Synapsers.MudBlazor.ThemeManager.Saver;
 using System.IO;
 using System.Text.Json;
 using System.Threading.Tasks;

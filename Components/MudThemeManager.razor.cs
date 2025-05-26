@@ -1,8 +1,10 @@
 ﻿using Microsoft.AspNetCore.Components;
+using MudBlazor;
 using MudBlazor.State;
-using MudBlazor.ThemeManager.Saver.Extensions;
+using MudBlazor.Utilities;
+using Synapsers.MudBlazor.ThemeManager.Saver.Extensions;
 
-namespace MudBlazor.ThemeManager.Saver;
+namespace Synapsers.MudBlazor.ThemeManager.Saver;
 
 public partial class MudThemeManager : ComponentBaseWithState
 {

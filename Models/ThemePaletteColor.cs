@@ -1,4 +1,4 @@
-﻿namespace MudBlazor.ThemeManager.Saver;
+﻿namespace Synapsers.MudBlazor.ThemeManager.Saver;
 
 public enum ThemePaletteColor
 {
