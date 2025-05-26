@@ -20,13 +20,11 @@
     <Company>MudBlazor</Company>
     <Authors>Garderoben, Henon and Contributors</Authors>
     <Copyright>Copyright 2020-2024 Jonny Larsson</Copyright>
-    <Description>ThemeManager.Saver component for MudBlazor to design, test, save and manage Mudblazor themes with persistence capabilities.</Description>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageProjectUrl>https://mudblazor.com/</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/MudBlazor/ThemeManager</RepositoryUrl>
-    <PackageTags>Blazor, MudBlazor, Material, Material Design, Components, Blazor Components, Blazor Library</PackageTags>
+    <Description>ThemeManager.Saver component for MudBlazor to design, test, save and manage Mudblazor themes with persistence capabilities.</Description>    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/dorofino/MudBlazor.ThemeManager.Saver</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/dorofino/MudBlazor.ThemeManager.Saver</RepositoryUrl>
+    <PackageTags>Blazor, MudBlazor, Material, Material Design, Components, Blazor Components, Blazor Library, Theme Manager, Theme Persistence</PackageTags>
     <RepositoryType>git</RepositoryType>
-    <PackageIcon>Nuget.png</PackageIcon>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
   
@@ -40,13 +38,8 @@
   <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
     <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
   </PropertyGroup>
-
   <ItemGroup>
-    <None Include="..\..\content\$(PackageIcon)">
-      <Pack>True</Pack>
-      <PackagePath>\</PackagePath>
-    </None>
-    <None Include="..\..\$(PackageReadmeFile)">
+    <None Include="README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
