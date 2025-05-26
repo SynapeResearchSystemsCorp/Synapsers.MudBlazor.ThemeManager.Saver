@@ -4,17 +4,17 @@
   <img src="Synapsers.MudBlazor.ThemeManager.Saver.webp" alt="Synapser MudBlazor Theme Manager Saver" style="max-width: 100%; height: auto;">
 </p>
 
-<p align="center">  <a href="https://github.com/dorofino/Synapsers.MudBlazor.ThemeManager.Saver/stargazers">
-    <img src="https://img.shields.io/github/stars/dorofino/Synapsers.MudBlazor.ThemeManager.Saver" alt="GitHub Repo stars">
+<p align="center">  <a href="https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver/stargazers">
+    <img src="https://img.shields.io/github/stars/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver" alt="GitHub Repo stars">
   </a>
-  <a href="https://github.com/dorofino/Synapsers.MudBlazor.ThemeManager.Saver/commits/main">
-    <img src="https://img.shields.io/github/last-commit/dorofino/Synapsers.MudBlazor.ThemeManager.Saver" alt="GitHub last commit">
+  <a href="https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver/commits/main">
+    <img src="https://img.shields.io/github/last-commit/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver" alt="GitHub last commit">
   </a>
-  <a href="https://github.com/dorofino/Synapsers.MudBlazor.ThemeManager.Saver/graphs/contributors">
-    <img src="https://img.shields.io/github/contributors/dorofino/Synapsers.MudBlazor.ThemeManager.Saver" alt="Contributors">
+  <a href="https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver" alt="Contributors">
   </a>
-  <a href="https://github.com/dorofino/Synapsers.MudBlazor.ThemeManager.Saver/discussions">
-    <img src="https://img.shields.io/github/discussions/dorofino/Synapsers.MudBlazor.ThemeManager.Saver" alt="Discussions">
+  <a href="https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver/discussions">
+    <img src="https://img.shields.io/github/discussions/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver" alt="Discussions">
   </a>  <!-- <a href="https://www.nuget.org/packages/Synapsers.MudBlazor.ThemeManager.Saver/">
     <img src="https://img.shields.io/nuget/v/Synapsers.MudBlazor.ThemeManager.Saver.svg" alt="NuGet version">
   </a>
