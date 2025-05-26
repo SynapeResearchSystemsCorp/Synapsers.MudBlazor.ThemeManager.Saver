@@ -4,6 +4,45 @@
   <img src="MudBlazor.ThemeManager.Saver.webp" alt="MudBlazor Theme Manager Saver" style="max-width: 100%; height: auto;">
 </p>
 
+<p align="center">
+  <a href="https://github.com/YOUR-USERNAME/MudBlazor.ThemeManager.Saver/actions">
+    <img src="https://github.com/YOUR-USERNAME/MudBlazor.ThemeManager.Saver/workflows/CI/badge.svg" alt="GitHub Workflow Status">
+  </a>
+  <a href="https://codecov.io/gh/YOUR-USERNAME/MudBlazor.ThemeManager.Saver">
+    <img src="https://codecov.io/gh/YOUR-USERNAME/MudBlazor.ThemeManager.Saver/branch/main/graph/badge.svg" alt="Codecov">
+  </a>
+  <a href="https://sonarcloud.io/dashboard?id=YOUR-USERNAME_MudBlazor.ThemeManager.Saver">
+    <img src="https://sonarcloud.io/api/project_badges/measure?project=YOUR-USERNAME_MudBlazor.ThemeManager.Saver&metric=alert_status" alt="Quality Gate Status">
+  </a>
+  <a href="https://github.com/YOUR-USERNAME/MudBlazor.ThemeManager.Saver/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/YOUR-USERNAME/MudBlazor.ThemeManager.Saver" alt="GitHub License">
+  </a>
+  <a href="https://github.com/YOUR-USERNAME/MudBlazor.ThemeManager.Saver/stargazers">
+    <img src="https://img.shields.io/github/stars/YOUR-USERNAME/MudBlazor.ThemeManager.Saver" alt="GitHub Repo stars">
+  </a>
+  <a href="https://github.com/YOUR-USERNAME/MudBlazor.ThemeManager.Saver/commits/main">
+    <img src="https://img.shields.io/github/last-commit/YOUR-USERNAME/MudBlazor.ThemeManager.Saver" alt="GitHub last commit">
+  </a>
+  <a href="https://github.com/YOUR-USERNAME/MudBlazor.ThemeManager.Saver/graphs/contributors">
+    <img src="https://img.shields.io/github/contributors/YOUR-USERNAME/MudBlazor.ThemeManager.Saver" alt="Contributors">
+  </a>
+  <a href="https://github.com/YOUR-USERNAME/MudBlazor.ThemeManager.Saver/discussions">
+    <img src="https://img.shields.io/github/discussions/YOUR-USERNAME/MudBlazor.ThemeManager.Saver" alt="Discussions">
+  </a>
+  <a href="https://discord.gg/mudblazor">
+    <img src="https://img.shields.io/discord/786656789310865418?color=%237289da&label=Discord&logo=discord&logoColor=%23fff" alt="Discord">
+  </a>
+  <a href="https://twitter.com/MudBlazor">
+    <img src="https://img.shields.io/twitter/follow/MudBlazor?style=social" alt="Twitter">
+  </a>
+  <a href="https://www.nuget.org/packages/MudBlazor.ThemeManager.Saver/">
+    <img src="https://img.shields.io/nuget/v/MudBlazor.ThemeManager.Saver.svg" alt="NuGet version">
+  </a>
+  <a href="https://www.nuget.org/packages/MudBlazor.ThemeManager.Saver/">
+    <img src="https://img.shields.io/nuget/dt/MudBlazor.ThemeManager.Saver.svg" alt="NuGet downloads">
+  </a>
+</p>
+
 > **Enhanced Fork**: This project is an enhanced fork of the original [MudBlazor ThemeManager](https://github.com/MudBlazor/ThemeManager) with additional theme saving and persistence capabilities.
 
 ## Overview
