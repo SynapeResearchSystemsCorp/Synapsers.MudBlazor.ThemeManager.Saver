@@ -1,4 +1,4 @@
-# MudBlazor ThemeManager Saver - Theme Saving Guide
+# Synapser MudBlazor ThemeManager Saver - Theme Saving Guide
 
 <p align="center">
   <img src="Synapsers.MudBlazor.ThemeManager.Saver.webp" alt="Synapser MudBlazor Theme Manager Saver" style="max-width: 100%; height: auto;">
@@ -27,7 +27,7 @@
 
 ## Overview
 
-MudBlazor ThemeManager Saver is a powerful component that allows you to design, customize, save, and manage themes for MudBlazor applications. This enhanced version focuses on theme saving and persistence functionality.
+Synapser MudBlazor ThemeManager Saver is a powerful component that allows you to design, customize, save, and manage themes for MudBlazor applications. This enhanced version focuses on theme saving and persistence functionality.
 
 ## Current Theme Management Features
 
@@ -480,7 +480,7 @@ Here's an example of how the persisted theme data looks when saved as JSON:
 
 ### Quick Setup
 
-1. **Add the Package**: Add the MudBlazor ThemeManager Saver package to your project
+1. **Add the Package**: Add the Synapser MudBlazor ThemeManager Saver package to your project
 2. **Choose Persistence Method**: 
    - For browser storage: Use the localStorage approach
    - For server-side persistence: Use the JSON file persistence service
