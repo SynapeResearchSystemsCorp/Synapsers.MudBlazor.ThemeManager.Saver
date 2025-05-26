@@ -1,5 +1,11 @@
 # MudBlazor ThemeManager Saver - Theme Saving Guide
 
+<p align="center">
+  <img src="MudBlazor.ThemeManager.Saver.webp" alt="MudBlazor Theme Manager Saver" style="max-width: 100%; height: auto;">
+</p>
+
+> **Enhanced Fork**: This project is an enhanced fork of the original [MudBlazor ThemeManager](https://github.com/MudBlazor/ThemeManager) with additional theme saving and persistence capabilities.
+
 ## Overview
 
 MudBlazor ThemeManager Saver is a powerful component that allows you to design, customize, save, and manage themes for MudBlazor applications. This enhanced version focuses on theme saving and persistence functionality.
