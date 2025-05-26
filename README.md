@@ -1,8 +1,8 @@
-# MudBlazor.ThemeManager.Saver - Theme Saving Guide
+# MudBlazor ThemeManager Saver - Theme Saving Guide
 
 ## Overview
 
-MudBlazor.ThemeManager.Saver is a powerful component that allows you to design, customize, save, and manage themes for MudBlazor applications. This enhanced version focuses on theme saving and persistence functionality.
+MudBlazor ThemeManager Saver is a powerful component that allows you to design, customize, save, and manage themes for MudBlazor applications. This enhanced version focuses on theme saving and persistence functionality.
 
 ## Current Theme Management Features
 
@@ -277,7 +277,7 @@ public bool AreThemesEqual(ThemeManagerTheme theme1, ThemeManagerTheme theme2)
 
 ## Getting Started
 
-1. Add the MudBlazor.ThemeManager.Saver package to your project
+1. Add the MudBlazor ThemeManager Saver package to your project
 2. Include the component in your layout
 3. Implement saving/loading functionality as shown in the examples above
 4. Customize the theme manager appearance using the provided CSS classes
