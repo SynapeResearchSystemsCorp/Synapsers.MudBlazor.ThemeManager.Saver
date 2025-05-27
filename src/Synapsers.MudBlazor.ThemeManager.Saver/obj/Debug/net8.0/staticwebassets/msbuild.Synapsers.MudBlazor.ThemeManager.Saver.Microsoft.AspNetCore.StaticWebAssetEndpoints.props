@@ -1,0 +1,16 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAssetEndpoint Include="_content/Synapsers.MudBlazor.ThemeManager.Saver/MudBlazorThemeManager.9850lpnkly.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MudBlazorThemeManager.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9850lpnkly"},{"Name":"integrity","Value":"sha256-hzx3FeYu7VeScONShpbENB4zR67g5oGiT7AivYOQhss="},{"Name":"label","Value":"_content/Synapsers.MudBlazor.ThemeManager.Saver/MudBlazorThemeManager.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"486"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hzx3FeYu7VeScONShpbENB4zR67g5oGiT7AivYOQhss=\u0022"},{"Name":"Last-Modified","Value":"Tue, 27 May 2025 21:57:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Synapsers.MudBlazor.ThemeManager.Saver/MudBlazorThemeManager.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\MudBlazorThemeManager.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hzx3FeYu7VeScONShpbENB4zR67g5oGiT7AivYOQhss="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"486"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022hzx3FeYu7VeScONShpbENB4zR67g5oGiT7AivYOQhss=\u0022"},{"Name":"Last-Modified","Value":"Tue, 27 May 2025 21:57:10 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+  </ItemGroup>
+</Project>

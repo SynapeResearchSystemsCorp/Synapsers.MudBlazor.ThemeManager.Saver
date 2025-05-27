@@ -1,0 +1,62 @@
+﻿@using global::MudBlazor
+@namespace Synapsers.MudBlazor.ThemeManager.Saver
+@inherits ComponentBaseWithState
+
+<CascadingValue Value="this">
+    <MudDrawer @bind-Open:get="_openState.Value" @bind-Open:set="_openState.SetValueAsync" Anchor="Anchor.End" Elevation="25" Variant="@DrawerVariant.Temporary" Overlay="false" Width="312px">
+        <div class="pt-2 px-4">
+            <MudText Typo="Typo.h6" Class="mb-4">MudBlazor<br>ThemeManager Saver</MudText>
+            <MudDivider Class="my-2" />            
+            <MudSelect Label="Drawer ClipMode" T="DrawerClipMode" Value="@((Theme?.DrawerClipMode) ?? DrawerClipMode.Never)" ValueChanged="OnDrawerClipModeAsync" Dense="true" Underline="false" Class="my-2">
+                <MudSelectItem T="DrawerClipMode" Value="DrawerClipMode.Never">Never</MudSelectItem>
+                <MudSelectItem T="DrawerClipMode" Value="DrawerClipMode.Docked">Docked</MudSelectItem>
+                <MudSelectItem T="DrawerClipMode" Value="DrawerClipMode.Always">Always</MudSelectItem>
+            </MudSelect>
+            <MudSelect Label="Font Family" T="string" Value="@((Theme?.FontFamily) ?? "Roboto")" ValueChanged="OnFontFamilyAsync" Dense="true" Underline="false" Class="my-2">
+                <MudSelectItem T="string" Value="@("Roboto")" />
+                <MudSelectItem T="string" Value="@("Montserrat")" />
+                <MudSelectItem T="string" Value="@("Segoe UI")" />
+                <MudSelectItem T="string" Value="@("Ubuntu")" />
+            </MudSelect>
+            <MudSlider Step="1" Min="0" Max="25" T="int" Value="@((Theme?.DefaultBorderRadius) ?? 4)" ValueChanged="OnDefaultBorderRadiusAsync" Class="mt-3"><MudText Typo="Typo.body2">Border Radius: <b>@($"{@Theme?.DefaultBorderRadius ?? 4}px")</b></MudText></MudSlider>
+            <MudSlider Step="1" Min="0" Max="25" T="int" Value="@((Theme?.AppBarElevation) ?? 25)" ValueChanged="OnAppBarElevationAsync"><MudText Typo="Typo.body2">AppBar Elevation: <b>@($"{@Theme?.AppBarElevation ?? 25}")</b></MudText></MudSlider>
+            <MudSlider Step="1" Min="0" Max="25" T="int" Value="@((Theme?.DrawerElevation) ?? 2)" ValueChanged="OnDrawerElevationAsync"><MudText Typo="Typo.body2">Drawer Elevation: <b>@($"{@Theme?.DrawerElevation ?? 2}")</b></MudText></MudSlider>
+            <MudSlider Step="1" Min="0" Max="25" T="int" Value="@((Theme?.DefaultElevation) ?? 1)" ValueChanged="OnDefaultElevationAsync"><MudText Typo="Typo.body2">Default Elevation: <b>@($"{@Theme?.DefaultElevation ?? 1}")</b></MudText></MudSlider>
+        </div>        <div class="pt-6">            <MudText Typo="Typo.body2" GutterBottom="true" Class="mx-4 mb-4"><b>Theme Colors</b></MudText>
+            <MudThemeManagerColorItem @key="@($"theme-color-primary-{_currentPalette.Primary?.ToString() ?? ""}")" Name="Primary" ThemeColor="@(_currentPalette.Primary?.ToString() ?? "")" ColorType="ThemePaletteColor.Primary" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem @key="@($"theme-color-secondary-{_currentPalette.Secondary?.ToString() ?? ""}")" Name="Secondary" ThemeColor="@(_currentPalette.Secondary?.ToString() ?? "")" ColorType="ThemePaletteColor.Secondary" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem @key="@($"theme-color-tertiary-{_currentPalette.Tertiary?.ToString() ?? ""}")" Name="Tertiary" ThemeColor="@(_currentPalette.Tertiary?.ToString() ?? "")" ColorType="ThemePaletteColor.Tertiary" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem @key="@($"theme-color-info-{_currentPalette.Info?.ToString() ?? ""}")" Name="Info" ThemeColor="@(_currentPalette.Info?.ToString() ?? "")" ColorType="ThemePaletteColor.Info" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem @key="@($"theme-color-success-{_currentPalette.Success?.ToString() ?? ""}")" Name="Success" ThemeColor="@(_currentPalette.Success?.ToString() ?? "")" ColorType="ThemePaletteColor.Success" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem @key="@($"theme-color-warning-{_currentPalette.Warning?.ToString() ?? ""}")" Name="Warning" ThemeColor="@(_currentPalette.Warning?.ToString() ?? "")" ColorType="ThemePaletteColor.Warning" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem @key="@($"theme-color-error-{_currentPalette.Error?.ToString() ?? ""}")" Name="Error" ThemeColor="@(_currentPalette.Error?.ToString() ?? "")" ColorType="ThemePaletteColor.Error" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem @key="@($"theme-color-dark-{_currentPalette.Dark?.ToString() ?? ""}")" Name="Dark" ThemeColor="@(_currentPalette.Dark?.ToString() ?? "")" ColorType="ThemePaletteColor.Dark" ColorPickerView="ColorPickerView" />
+
+            <MudText Typo="Typo.body2" GutterBottom="true" Class="pt-4 mx-4"><b>Components</b></MudText>
+            <MudThemeManagerColorItem Name="Appbar Text" ThemeColor="@(_currentPalette.AppbarText?.ToString() ?? "")" ColorType="ThemePaletteColor.AppbarText" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Appbar BG" ThemeColor="@(_currentPalette.AppbarBackground?.ToString() ?? "")" ColorType="ThemePaletteColor.AppbarBackground" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Drawer Text" ThemeColor="@(_currentPalette.DrawerText?.ToString() ?? "")" ColorType="ThemePaletteColor.DrawerText" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Drawer Icons" ThemeColor="@(_currentPalette.DrawerIcon?.ToString() ?? "")" ColorType="ThemePaletteColor.DrawerIcon" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Drawer BG" ThemeColor="@(_currentPalette.DrawerBackground?.ToString() ?? "")" ColorType="ThemePaletteColor.DrawerBackground" ColorPickerView="ColorPickerView" />
+
+            <MudText Typo="Typo.body2" GutterBottom="true" Class="pt-4 mx-4"><b>General</b></MudText>
+            <MudThemeManagerColorItem Name="Surface" ThemeColor="@(_currentPalette.Surface?.ToString() ?? "")" ColorType="ThemePaletteColor.Surface" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Background" ThemeColor="@(_currentPalette.Background?.ToString() ?? "")" ColorType="ThemePaletteColor.Background" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Background Gray" ThemeColor="@(_currentPalette.BackgroundGray?.ToString() ?? "")" ColorType="ThemePaletteColor.BackgroundGray" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Lines Default" ThemeColor="@(_currentPalette.LinesDefault?.ToString() ?? "")" ColorType="ThemePaletteColor.LinesDefault" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Lines Inputs" ThemeColor="@(_currentPalette.LinesInputs?.ToString() ?? "")" ColorType="ThemePaletteColor.LinesInputs" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Divider" ThemeColor="@(_currentPalette.Divider?.ToString() ?? "")" ColorType="ThemePaletteColor.Divider" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Divider Light" ThemeColor="@(_currentPalette.DividerLight?.ToString() ?? "")" ColorType="ThemePaletteColor.DividerLight" ColorPickerView="ColorPickerView" />
+
+            <MudText Typo="Typo.body2" GutterBottom="true" Class="pt-4 mx-4"><b>Text & Actions</b></MudText>
+            <MudThemeManagerColorItem Name="Text Primary" ThemeColor="@(_currentPalette.TextPrimary?.ToString() ?? "")" ColorType="ThemePaletteColor.TextPrimary" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Text Secondary" ThemeColor="@(_currentPalette.TextSecondary?.ToString() ?? "")" ColorType="ThemePaletteColor.TextSecondary" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Text Disabled" ThemeColor="@(_currentPalette.TextDisabled?.ToString() ?? "")" ColorType="ThemePaletteColor.TextDisabled" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Action Default" ThemeColor="@(_currentPalette.ActionDefault?.ToString() ?? "")" ColorType="ThemePaletteColor.ActionDefault" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Action Disabled" ThemeColor="@(_currentPalette.ActionDisabled?.ToString() ?? "")" ColorType="ThemePaletteColor.ActionDisabled" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Disabled BG" ThemeColor="@(_currentPalette.ActionDisabledBackground?.ToString() ?? "")" ColorType="ThemePaletteColor.ActionDisabledBackground" ColorPickerView="ColorPickerView" />
+            <MudThemeManagerColorItem Name="Surface" ThemeColor="@(_currentPalette.Surface?.ToString() ?? "")" ColorType="ThemePaletteColor.Surface" ColorPickerView="ColorPickerView" />
+        </div>
+    </MudDrawer>
+    <MudOverlay @bind-Visible:get="_openState.Value" @bind-Visible:set="_openState.SetValueAsync" OnClick="@(() => UpdateOpenValueAsync())" DarkBackground="false" />
+</CascadingValue>
