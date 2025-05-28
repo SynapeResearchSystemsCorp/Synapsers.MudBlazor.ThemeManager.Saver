@@ -66,3 +66,12 @@ if (Test-Path $packagePath) {
 # List all packages in the output directory
 Write-Host "Contents of $nupkgOutput folder:"
 Get-ChildItem -Path $nupkgOutput | ForEach-Object { Write-Host $_.Name }
+
+# Git commit, tag, and push for the new release
+Write-Host "Committing, tagging, and pushing release v$version to git..."
+git add .
+git commit -m "Release v$version"
+git tag v$version
+git push
+git push --tags
+Write-Host "Git release and tag v$version created and pushed."
