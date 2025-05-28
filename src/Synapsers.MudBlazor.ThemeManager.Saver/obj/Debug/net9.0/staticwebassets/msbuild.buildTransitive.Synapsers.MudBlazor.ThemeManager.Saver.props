@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\buildMultiTargeting\Synapsers.MudBlazor.ThemeManager.Saver.props" />
-</Project>
