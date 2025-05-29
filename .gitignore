@@ -23,3 +23,5 @@
 nupkg/
 *.nupkg
 *.snupkg
+*.ps1
+build-nuget.ps1
