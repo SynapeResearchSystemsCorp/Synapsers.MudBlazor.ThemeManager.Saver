@@ -20,3 +20,6 @@
 /src/Synapsers.MudBlazor.ThemeManager.Saver/bin/Debug/net8.0/Synapsers.MudBlazor.ThemeManager.Saver.pdb
 /src/Synapsers.MudBlazor.ThemeManager.Saver/bin/Debug/net8.0/Synapsers.MudBlazor.ThemeManager.Saver.staticwebassets.endpoints.json
 /src/Synapsers.MudBlazor.ThemeManager.Saver/bin/Debug/net8.0/Synapsers.MudBlazor.ThemeManager.Saver.staticwebassets.runtime.json
+nupkg/
+*.nupkg
+*.snupkg
