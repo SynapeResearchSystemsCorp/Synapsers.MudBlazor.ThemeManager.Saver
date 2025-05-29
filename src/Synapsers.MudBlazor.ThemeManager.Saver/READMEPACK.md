@@ -1,8 +1,5 @@
 # Synapsers MudBlazor ThemeManager Saver
 
-<p align="center">
-  <img src="https://github.com/SynapeResearchSystemsCorp/Synapsers.MudBlazor.ThemeManager.Saver/raw/main/src/Synapsers.MudBlazor.ThemeManager.Saver/Synapsers.MudBlazor.ThemeManager.Saver.webp" alt="Synapsers MudBlazor Theme Manager Saver" style="max-width: 100%; height: auto;">
-</p>
 
 > **Enhanced Fork**: This project is an enhanced fork of the original [MudBlazor ThemeManager](https://github.com/MudBlazor/ThemeManager) with robust theme saving and persistence capabilities for Blazor applications.
 
@@ -212,6 +209,8 @@ MIT License. See [LICENSE](../../LICENSE).
 
 - [MudBlazor](https://mudblazor.com/) for the original ThemeManager
 - All contributors and users who helped improve this project
+
+
 
 
 
