@@ -5,6 +5,8 @@ VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Synapsers.MudBlazor.ThemeManager.Saver", "src\Synapsers.MudBlazor.ThemeManager.Saver\Synapsers.MudBlazor.ThemeManager.Saver.csproj", "{2C838480-5DBE-C372-F827-F55091986EC5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "src\TestApp\TestApp.csproj", "{9C257CF0-2D42-4676-8438-FBD52A066551}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2C838480-5DBE-C372-F827-F55091986EC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C838480-5DBE-C372-F827-F55091986EC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C838480-5DBE-C372-F827-F55091986EC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C257CF0-2D42-4676-8438-FBD52A066551}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C257CF0-2D42-4676-8438-FBD52A066551}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C257CF0-2D42-4676-8438-FBD52A066551}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C257CF0-2D42-4676-8438-FBD52A066551}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

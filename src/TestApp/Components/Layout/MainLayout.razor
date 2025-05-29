@@ -1,0 +1,158 @@
+﻿@using Synapsers.MudBlazor.ThemeManager.Saver.Services
+@using Synapsers.MudBlazor.ThemeManager.Saver
+@using MudBlazor
+@inherits LayoutComponentBase
+@inject ThemeStateService ThemeStateService
+@inject NavigationManager NavigationManager
+
+<MudThemeProvider @ref="@_mudThemeProvider" Theme="ThemeStateService.ThemeManager.Theme" @bind-IsDarkMode="ThemeStateService.IsDarkMode" />
+<MudPopoverProvider />
+<MudDialogProvider />
+<MudSnackbarProvider />
+<MudLayout>
+    <MudAppBar Elevation="ThemeStateService.ThemeManager.AppBarElevation">
+        <MudIconButton Icon="@Icons.Material.Filled.Menu" Color="Color.Inherit" Edge="Edge.Start" OnClick="@((e) => DrawerToggle())" />
+        <MudText Typo="Typo.h6" Class="ml-3">Theme Configuration</MudText>
+        <MudSpacer />
+        <MudIconButton Icon="@(ThemeStateService.IsDarkMode ? Icons.Material.Filled.LightMode : Icons.Material.Filled.DarkMode)" 
+                       Color="Color.Inherit" OnClick="@(async (e) => await DarkModeToggleAsync())" Edge="Edge.End" />
+    </MudAppBar>
+    <MudDrawer @bind-Open="_drawerOpen" ClipMode="ThemeStateService.ThemeManager.DrawerClipMode" Elevation="ThemeStateService.ThemeManager.DrawerElevation">
+        <NavMenu />
+    </MudDrawer>
+    <MudMainContent>
+        <MudContainer MaxWidth="MaxWidth.False" Class="mt-16 px-16">
+            @Body
+        </MudContainer>
+    </MudMainContent>
+    <MudThemeManagerButton OnClick="@((e) => OpenThemeManager(true))" />
+    <MudThemeManager @ref="_themeManager" @key="_themeKey" Open="_themeManagerOpen" OpenChanged="OpenThemeManager" Theme="ThemeStateService.ThemeManager" ThemeChanged="UpdateThemeAsync" IsDarkMode="ThemeStateService.IsDarkMode" />
+</MudLayout>
+
+
+<div id="blazor-error-ui" data-nosnippet>
+    An unhandled error has occurred.
+    <a href="." class="reload">Reload</a>
+    <span class="dismiss">🗙</span>
+</div>
+
+@code {
+    private MudThemeProvider _mudThemeProvider = null!;
+    private MudThemeManager _themeManager = null!;
+    private bool _drawerOpen = true;
+    private bool _themeManagerOpen;
+    // A new key to force complete re-rendering of the ThemeManager when needed
+    private string _themeKey = Guid.NewGuid().ToString();
+
+    protected override void OnInitialized()
+    {
+        ThemeStateService.OnThemeChanged += StateHasChanged;
+
+        // Set up navigation handling to close any open color pickers when navigating
+        NavigationManager.LocationChanged += OnLocationChanged;
+    }
+
+    private void OnLocationChanged(object? sender, LocationChangedEventArgs e)
+    {
+        // When navigating between pages, ensure theme manager is closed
+        // This prevents issues with open color pickers
+        if (_themeManagerOpen)
+        {
+            _themeManagerOpen = false;
+            _themeKey = Guid.NewGuid().ToString();
+            InvokeAsync(StateHasChanged);
+        }
+    }
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // Initialize on first render
+            await InvokeAsync(StateHasChanged);
+        }
+        else if (_themeManager != null && _themeManagerOpen)
+        {
+            // If the theme manager is open, ensure it's refreshed
+            // This is critical for the color pickers to work correctly
+            _themeManager.RefreshColorPickers();
+        }
+    }// This method is called when the component is navigated to
+    protected override void OnParametersSet()
+    {
+        // Generate a new key to force the MudThemeManager to fully re-render
+        // This is crucial for the color picker to work properly after navigation
+        _themeKey = Guid.NewGuid().ToString();
+
+        if (_themeManager != null)
+        {
+            // Call RefreshColorPickers if _themeManager is initialized
+            // This will happen after the first render
+            _themeManager.RefreshColorPickers();
+        }
+
+        base.OnParametersSet();
+    }
+
+    private void DrawerToggle()
+    {
+        _drawerOpen = !_drawerOpen;
+    }
+    private void OpenThemeManager(bool value)
+    {
+        _themeManagerOpen = value;
+
+        if (value)
+        {
+            // When opening the theme manager, generate a new key to ensure proper initialization
+            _themeKey = Guid.NewGuid().ToString();
+
+            // Also refresh the color pickers
+            if (_themeManager != null)
+            {
+                _themeManager.RefreshColorPickers();
+            }
+        }
+
+        // Force state refresh to ensure proper component binding
+        InvokeAsync(StateHasChanged);
+    }
+
+    private async Task DarkModeToggleAsync()
+    {
+        try
+        {
+            await ThemeStateService.ToggleDarkModeAsync();
+            await InvokeAsync(StateHasChanged);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error toggling dark mode: {ex.Message}");
+            // You might want to handle the error more gracefully
+        }
+    }
+    private async Task UpdateThemeAsync(ThemeManagerTheme value)
+    {
+        try
+        {
+            await ThemeStateService.UpdateThemeAsync(value);
+
+            // Regenerate the key to force re-rendering of the theme manager
+            _themeKey = Guid.NewGuid().ToString();
+
+            // Ensure the UI is updated
+            await InvokeAsync(StateHasChanged);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error updating theme: {ex.Message}");
+            // You might want to handle the error more gracefully
+        }
+    }    // Update Dispose to unsubscribe from the navigation event
+    public void Dispose()
+    {
+        ThemeStateService.OnThemeChanged -= StateHasChanged;
+        NavigationManager.LocationChanged -= OnLocationChanged;
+    }
+}
+
+
