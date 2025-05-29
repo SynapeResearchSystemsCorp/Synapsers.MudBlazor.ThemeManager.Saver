@@ -1,4 +1,9 @@
-# Synapsers MudBlazor ThemeManager Saver
+<p align="center">
+  <img src="Synapsers.MudBlazor.ThemeManager.Saver.webp" alt="Synapsers MudBlazor Theme Manager Saver" style="max-width: 100%; height: auto;">
+</p>
+
+
+
 
 > **Enhanced Fork**: This project is an enhanced fork of the original [MudBlazor ThemeManager](https://github.com/MudBlazor/ThemeManager) with robust theme saving and persistence capabilities for Blazor applications.
 
